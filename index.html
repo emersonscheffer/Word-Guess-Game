@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HangMan</title>
+</head>
+
+<body>
+    <section>
+
+        <div id="elyptcal">
+
+            <div id="scoreRow">
+                <div id="score">
+                    <p>SCORE</p>
+                    <p>0000</p>
+                </div>
+
+                <div id="highScore">
+                    <p>HIGH SCORE</p>
+                    <p>0000</p>
+                </div>
+            </div>
+            <!-- scoreRow -->
+
+            <article>
+                <div id="titleScreenSection">
+                    <div id="titleRow">
+
+                        <div id="picTitle" class="picTitle">
+                            <img src="./images/title-screen.png" alt="" width="100%">
+                        </div>
+                        <div id="title">HangMan</div>
+                        <div id="picTitle2" class="picTitle">
+                            <img src="./images/title-screen.png" alt="" width="100%">
+                        </div>
+
+                    </div>
+
+                    <div id="playRow">
+                        <div onclick="playGameBtn()" id="playButton">Play</div>
+                    </div>
+                </div>
+                <!-- titleScreenSection -->
+
+
+                <div id="gameSection">
+
+                    <div id="gameSectionMain">
+                        <div id="empty"></div>
+                        <div id="changingImage"></div>
+
+                        <div id="timerSectionMain">
+                            <div id="timerSection"></div>
+                        </div>
+
+                        <div id="wordSectionMain">
+                            <div id="wordSection"></div>
+                        </div>
+
+                        <div id="keyboardSectionMain">
+                            <div id="keyboardSection"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- gameSection -->
+
+
+
+                <div id="gameOverSection">
+                    <div id="gameOverSectionMain">
+                        <h1 class="wordGameOver">GameOver</h1>
+
+                        <img id="deadMan" src="./images/pic10.png" alt="">
+
+                        <div id="playAgainBtn" onclick="playAgainBtn()">Play Again</div>
+                    </div>
+                </div>
+
+                <!-- gameOverSection -->
+
+                <div id="winSection">
+
+                    <h1>huuray</h1>
+                    You Win
+                    <div id="chosenWord"></div>
+                    <div>
+                        <button onclick="playAgainBtn()">Play again</button>
+                    </div>
+                </div>
+
+                <!-- winSection -->
+
+
+
+            </article>
+
+        </div>
+        <!-- elyptcal -->
+
+    </section>
+
+    <footer>
+
+        <h3>created by emerson scheffer - 2019.</h3>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
